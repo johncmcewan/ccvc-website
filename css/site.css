@@ -46,7 +46,7 @@
     body.menu-open { overflow: hidden; }
     body.route-map .nav-shell,
     body.route-renters .nav-shell,
-    body.route-history .nav-shell { background: #0b211a; }
+    body.route-history .nav-shell, body.route-documents .nav-shell { background: #0b211a; }
     .home-only[hidden], .route-page[hidden] { display: none !important; }
     .route-page {
       min-height: calc(100svh - 150px);

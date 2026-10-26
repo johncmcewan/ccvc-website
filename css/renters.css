@@ -1,0 +1,10 @@
+/* Renter agreement page — additions on top of site.css (same design system). */
+.renter-form-heading h1 { margin: 0; color: var(--ink); font-family: "Libre Baskerville", Georgia, serif; font-size: clamp(2rem, 4.6vw, 4rem); line-height: 1.09; letter-spacing: -.035em; }
+.house-help { margin: 8px 0 0; color: var(--muted); font-size: .84rem; line-height: 1.5; }
+.house-help a { color: var(--lake); }
+.packet-error { display: none; margin-top: 22px; padding: 18px 20px; border-left: 4px solid #a54437; background: var(--page); color: var(--ink); }
+.packet-error.show { display: block; }
+.packet-error strong { display: block; margin-bottom: 4px; color: #a54437; }
+.packet-error p { margin: 0; }
+.packet-error .packet-actions { margin-top: 14px; }
+.field select { width: 100%; min-height: 52px; }
