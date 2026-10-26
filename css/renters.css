@@ -15,3 +15,6 @@
 .fallback-address { margin-top: 12px !important; color: var(--muted); font-size: .9rem; }
 .fallback-address a { color: var(--lake); }
 .packet-error .fallback-steps strong { display: inline; margin: 0; color: var(--ink); }
+.guide-pointer a, .guide-after a { color: var(--lake); font-weight: 600; }
+.packet-result .guide-after { margin: 10px 0 0; }
+@media screen and (max-width: 820px) { body .section.route-page { padding-top: calc(var(--header-h) + 32px); } }

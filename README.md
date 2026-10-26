@@ -4,6 +4,7 @@ Static site for Cape Cod Village Club, Inc. (Hague, NY). No build step: Vercel s
 
 - `index.html` — main pages (Home, `#history`, `#documents`, `#map`), switched by the URL hash
 - `renters/` — the renter agreement form (own page; old `#renters` links redirect here)
+- `renter-guide/` — short renter guide, linked from the form
 - `css/site.css`, `js/site.js` — shared styles, menu and page switching; `css/renters.css`, `js/renters.js` — the form
 - `images/`, `images/history/`, `images/documents/` — photography and archival documents
 - `docs/` — club policy PDFs
