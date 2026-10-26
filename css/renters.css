@@ -10,3 +10,8 @@
 .field select { width: 100%; min-height: 52px; }
 /* .btn sets display, which would otherwise override the hidden attribute */
 .btn[hidden] { display: none !important; }
+.fallback-steps { margin: 12px 0 0; padding-left: 22px; line-height: 1.55; }
+.fallback-steps li { margin: 4px 0; }
+.fallback-address { margin-top: 12px !important; color: var(--muted); font-size: .9rem; }
+.fallback-address a { color: var(--lake); }
+.packet-error .fallback-steps strong { display: inline; margin: 0; color: var(--ink); }
