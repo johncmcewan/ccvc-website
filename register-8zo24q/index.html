@@ -58,7 +58,7 @@
                 <p class="lead">Groups renting a home at CCVC will need to complete the registration below at least a week prior to their rental.</p>
                 <p class="lead">If you have questions please contact the owner of the home you are renting.</p><p class="lead guide-pointer">New to the Club? Read the <a href="../renter-guide/">Renter Guide</a> before you arrive.</p>
                 <div class="form-grid">
-                  <div class="field confirm-field"><label class="confirm-label" for="confirmedRental"><input id="confirmedRental" name="confirmedRental" type="checkbox" required> <span>I have a confirmed rental with a CCVC homeowner. <span class="required">*</span></span></label><span class="error"></span></div>
+                  <div class="field confirm-field"><label class="confirm-label" for="confirmedRental"><input id="confirmedRental" name="confirmedRental" type="checkbox" required data-error="Please confirm you have a confirmed rental with a CCVC homeowner."> <span>I have a confirmed rental with a CCVC homeowner. <span class="required">*</span></span></label><span class="error"></span></div>
                   <div class="field"><label for="today">Todays Date <span class="required">*</span></label><input id="today" name="today" type="date" required><span class="error"></span></div>
                   <div class="field"><label for="renterName">Name of Person Renting House <span class="required">*</span></label><input id="renterName" name="renterName" autocomplete="name" required><span class="error"></span></div>
                   <div class="field"><label for="cell">Cell Phone Number <span class="required">*</span></label><input id="cell" name="cell" type="tel" autocomplete="tel" required><span class="error"></span></div>
@@ -122,6 +122,7 @@
                   </div>
                 </div>
                 <div class="watercraft-extra" id="watercraft-extra">
+                  <div class="field confirm-field boat-approval"><label class="confirm-label" for="boatApproved"><input id="boatApproved" name="boatApproved" type="checkbox" data-error="Please confirm your homeowner has approved a boat. If they haven’t, choose “No” above."> <span>My homeowner has approved my having a boat at CCVC during my stay. <span class="required">*</span></span></label><span class="error"></span></div>
                   <div class="choice-field">
                     <span class="choice-label">Will you be bringing an owned boat or renting? <span class="required">*</span></span>
                     <div class="radio-list">

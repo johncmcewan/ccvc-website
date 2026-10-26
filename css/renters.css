@@ -22,3 +22,4 @@
 .field.confirm-field { grid-column: 1 / -1; }
 .confirm-label { display: flex; gap: 12px; align-items: flex-start; font-weight: 600; cursor: pointer; }
 .field .confirm-label input[type="checkbox"] { width: 22px; min-height: 22px; height: 22px; margin: 2px 0 0; padding: 0; flex: 0 0 auto; accent-color: var(--pine); }
+.boat-approval { margin: 0 0 22px; }
