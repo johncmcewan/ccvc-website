@@ -15,3 +15,6 @@
 .register-callout { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 22px; margin: 22px 0 6px; padding: 20px 22px; border-top: 4px solid var(--pine); background: var(--mist); }
 .register-callout p { margin: 0; }
 .guide-copy .guide-note { margin-top: 18px; color: var(--muted); font-size: .84rem; font-style: italic; }
+.contact-callout { margin: 22px 0 0; padding: 16px 20px; border-left: 4px solid var(--sand); background: var(--paper); }
+.contact-callout p { margin: 0; }
+.contact-callout + .register-callout { margin-top: 14px; }
