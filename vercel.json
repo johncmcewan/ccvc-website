@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/renters",
+      "destination": "/renter-guide/",
+      "permanent": false
+    },
+    {
+      "source": "/renters/:path*",
+      "destination": "/renter-guide/",
+      "permanent": false
+    }
+  ]
+}
