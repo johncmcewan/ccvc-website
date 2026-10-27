@@ -603,3 +603,9 @@
   .history-feature { max-width: 340px; }
 }
 
+/* Donate */
+.closing-donate { margin-top: 34px; }
+.closing-donate p { margin: 0 0 16px; font-size: .95rem; }
+.btn.donate-btn { background: var(--sand); border-color: var(--sand); color: #15251f; }
+.btn.donate-btn:hover, .btn.donate-btn:focus-visible { background: #efd39f; border-color: #efd39f; }
+
