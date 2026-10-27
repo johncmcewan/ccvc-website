@@ -1,9 +1,13 @@
-/* Donate page: EasyHOA's donation form framed inside the site. */
+/* Donate page: EasyHOA's donation form framed inside the site.
+   EasyHOA's page (measured Oct 27, 2026): its site menu bar is 79px tall at every width (hidden here);
+   the page is ~1,240px tall when the form is 992px+ wide and ~1,700-1,790px when narrower.
+   Heights follow the frame's own width (container queries) and leave room for validation messages. */
 .donate-wrap { width: min(1100px, 100%); }
 .donate-intro { max-width: 780px; margin-bottom: 26px; }
-.donate-frame-shell { position: relative; overflow: hidden; height: 1340px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.donate-frame-shell { container-type: inline-size; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.donate-frame-box { position: relative; overflow: hidden; height: 1880px; }
 .donate-frame { position: absolute; top: -79px; left: 0; width: 100%; height: calc(100% + 79px); border: 0; display: block; background: #fff; }
+@container (min-width: 992px) { .donate-frame-box { height: 1330px; } }
+@container (max-width: 559px) { .donate-frame-box { height: 1940px; } }
 .donate-fallback { margin: 14px 0 0; color: var(--muted); font-size: .84rem; }
 .donate-fallback a { color: var(--lake); }
-@media (max-width: 1060px) { .donate-frame-shell { height: 1880px; } }
-@media (max-width: 600px)  { .donate-frame-shell { height: 1960px; margin: 0 -6px; } }
