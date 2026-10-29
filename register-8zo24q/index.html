@@ -111,7 +111,7 @@
               <section class="wizard-step watercraft-question" data-step="4">
                 <div class="choice-field">
                   <label class="choice-label" for="watercraft">Are you planning on having a watercraft at CCVC during your stay? <span class="required">*</span></label>
-                  <p class="lead">If so, you must first have approval from the CCVC Member renting you the property. Answering “Yes” here, with your boat details and insurance, is your request to the Club. Please register at least three weeks before you arrive; the earlier, the better the chance space is available.</p>
+                  <p class="lead">If so, you must first have approval from the CCVC Member renting you the property. Answering “Yes” here, with your boat or jet ski details and insurance, is your request to the Club. Please register at least three weeks before you arrive; the earlier, the better the chance space is available.</p>
                   <div class="field">
                     <div class="select-shell" id="watercraft-select-shell">
                       <select id="watercraft" name="watercraft" required><option value="">Select...</option><option value="Yes">Yes</option><option value="No">No</option></select>
@@ -121,29 +121,14 @@
                   </div>
                 </div>
                 <div class="watercraft-extra" id="watercraft-extra">
-                  <div class="field confirm-field boat-approval"><label class="confirm-label" for="boatApproved"><input id="boatApproved" name="boatApproved" type="checkbox" data-error="Please confirm your homeowner has approved a boat. If they haven’t, choose “No” above."> <span>My homeowner has approved my having a boat at CCVC during my stay. <span class="required">*</span></span></label><span class="error"></span></div>
-                  <div class="choice-field">
-                    <span class="choice-label">Will you be bringing an owned boat or renting? <span class="required">*</span></span>
-                    <div class="radio-list">
-                      <label class="radio-line"><input type="radio" name="boatType" value="owned"> <span>Bringing an owned boat</span></label>
-                      <label class="radio-line"><input type="radio" name="boatType" value="renting"> <span>Renting a boat</span></label>
-                    </div>
-                    <span class="error" id="boat-type-error"></span>
-                  </div>
-                  <div class="boat-detail-panel" id="renting-boat-details">
-                    <div class="form-grid">
-                      <div class="field full"><label for="marinaName">Name of the marina <span class="required">*</span></label><input id="marinaName" name="marinaName"><span class="error"></span></div>
-                    </div>
-                  </div>
+                  <div class="field confirm-field boat-approval"><label class="confirm-label" for="boatApproved"><input id="boatApproved" name="boatApproved" type="checkbox" data-error="Please confirm your homeowner has approved your watercraft. If they haven’t, choose “No” above."> <span>My homeowner has approved my having a boat or jet ski at CCVC during my stay. <span class="required">*</span></span></label><span class="error"></span></div>
+                  <div id="watercraft-list"></div>
+                  <button class="add-watercraft" id="add-watercraft" type="button">+ Add another watercraft</button>
                   <div class="boat-detail-panel" id="owned-boat-details">
                     <div class="form-grid">
-                      <div class="field"><label for="boatMake">Make <span class="required">*</span></label><input id="boatMake" name="boatMake"><span class="error"></span></div>
-                      <div class="field"><label for="boatModel">Model <span class="required">*</span></label><input id="boatModel" name="boatModel"><span class="error"></span></div>
-                      <div class="field"><label for="boatLength">Length <span class="required">*</span></label><input id="boatLength" name="boatLength"><span class="error"></span></div>
-                      <div class="field"><label for="boatRegistration">Registration information <span class="required">*</span></label><input id="boatRegistration" name="boatRegistration"><span class="error"></span></div>
                       <div class="upload-block">
                         <div class="upload-label">Insurance <span class="required">*</span></div>
-                        <p class="upload-helper">Upload a PDF, JPG, JPEG, or PNG copy of your boat insurance. Maximum 8 MB per file; images are compressed before upload.</p>
+                        <p class="upload-helper">Upload a PDF, JPG, JPEG, or PNG copy of the insurance for each boat or jet ski you’re bringing. Maximum 8 MB per file; images are compressed before upload.</p>
                         <div class="dropzone" id="insurance-dropzone">
                           <div><p>Drag and drop a file here or click the button below to select a file to upload.</p><button class="select-file" id="select-file" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 7h6l2 2h10v11H3zM3 7V5h7l2 2"/></svg>Select File</button></div>
                           <input id="insurance" type="file" accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" data-max-size="8388608" multiple>
